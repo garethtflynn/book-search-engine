@@ -34,11 +34,13 @@ const resolvers = {
 
       return { token, user };
     },
-    saveBook: async (parent, { input }, context) => {
+    saveBook: async (parent, { bookData }, context) => {
+      console.log(context.user)
+      console.log("book!", bookData)
       if (context.user) {
-        const user = await User.findByIdAndUpdate(
+        const user = await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $push: { savedBooks: input } },
+          { $push: { savedBooks: bookData } },
           { new: true }
         );
         return user;
