@@ -23,7 +23,7 @@ No installation necessary. Just the Url of the deployed application
 
 ## Screenshots/Visuals
 
-![App Screenshot]()
+![App Screenshot](./assets/bookSearch.png)
 
 ## Technology
 
@@ -56,4 +56,4 @@ If you have any questions please email me at gareth.t.flynn@gmail.com
 ## Links  
 
 * [Repository](https://github.com/garethtflynn/book-search-engine)
-* [Deployed Appplication]()
+* [Deployed Appplication](https://sheltered-sea-64421.herokuapp.com/)
